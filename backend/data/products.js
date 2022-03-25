@@ -1,0 +1,173 @@
+const products = [
+  {
+  
+    name: 'Gold Bunny Milk',
+    image: '/images/bunnymilk.png',
+    description:
+      'Celebrate this Easter with the Lindt GOLD BUNNY. Ideal for decorating, gifting or for Easter Hunts the GOLD BUNNY makes any occasion special. A worldwide symbol of Easter, the Lindt GOLD BUNNY has been passionately created by the Lindt Swiss Maitres Chocolatiers for 70 years.',
+    brand: 'Lindt',
+    category: 'Chocolate',
+    price: 6.99,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 12,
+  },
+  {
+    name: 'Pantene Pro-V Daily Moisture Renewal Shampoo',
+    image: '/images/shampoo.png',
+    description:
+      'Pantene Pro-V Daily Moisture Renewal Shampoo has 0% silicones*, 0% grease^ to help give you lightweight smooth hair. It helps to provide deep hydration from root to tip. For dry hair; Infused with Pro-V Formula, it gently cleanses to strengthen hair from the inside-out.',
+    brand: 'Pantene',
+    category: 'Shampoo',
+    price: 16.99,
+    countInStock: 5,
+    rating: 3,
+    numReviews: 12,
+  },
+  {
+    name: 'Palmolive Milk & Honey Shower Gel',
+    image: '/images/bodywash.png',
+    description:
+      'We are here to make great skincare products without complexity or compromise.Our Palmolive Naturals Milk & Honey Body Wash with Moisturising Milk uses the best ingredients to help maintain your skin natural moisture.',
+    brand: 'Palmolive',
+    category: 'Body wash',
+    price: 11.99,
+    countInStock: 11,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    name: 'Gold Sunset Canola Oil',
+    image: '/images/oil.png',
+    description:
+      'Gold Sunset Canola Oil is a premium light frying and salad oil which is versatile and delicious in all its uses. As a source of omega 3 fatty acids, make Gold Sunset your number one choice for a canola cooking oil that can do it all.',
+    brand: 'Gold Sunset',
+    category: 'Oil',
+    price: 31.99,
+    countInStock: 7,
+    rating: 4.8,
+    numReviews: 10,
+  },
+  {
+    name: 'OMO Ultimate Front & Top Loader Laundry Liquid Detergent',
+    image: '/images/laundry.png',
+    description:
+      'Omo Ultimate Laundry Liquid Detergent Front & Top Loader 1.8LWith built in pre-treaters, OMO Ultimate liquid actively lifts 48hour dried in stains. Suitable for both front and top loaders and recommended by leading machine manufacturers.',
+    brand: 'OMO',
+    category: 'Laundry Liquid',
+    price: 23.99,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+  {
+    name: 'Magnum Ice Cream Mini Classic 6Pack',
+    image: '/images/icecream.png',
+    description:
+      'Magnum Classic Mini, the original Magnum served in a perfect miniature, the perfect treat for pleasure whenever. The perfect balance of Magnum cracking chocolate & velvety vanilla ice cream. All the delicious essentials that make up a full-size Magnum ice cream. Served in a perfect miniature.',
+    brand: 'Magnum',
+    category: 'Ice Cream',
+    price: 9.49,
+    countInStock: 8,
+    rating:4.5,
+    numReviews: 24,
+  },
+  {
+    name: 'Nescafe Cappuccino Coffee Sachets',
+    image: '/images/coffee.png',
+    description:
+      'Elevate your daily coffee routine with a delicious cup of NESCAFE Cappuccino. With a delectable layer of velvety froth and quality coffee, enjoy a cafe style creamy cappuccino and treat yourself at any time in the comfort of your own home.',
+    brand: 'Nescafe',
+    category: 'Coffee',
+    price: 6.99,
+    countInStock: 15,
+    rating: 4,
+    numReviews: 7,
+  },
+  {
+    name: 'Oral-B Pro 100 Cross Action Electric Toothbrush',
+    image: '/images/toothbrush.png',
+    description:
+      'Oral-B PRO 100 powered by BRAUN CROSSACTIONPower Brush with Waterproof HandleCharging StationTravel CaseCROSSACTION Midnight Black Brush HeadOral-B#1 TOOTHBRUSH BRAND USED BY DENTISTS WORLDWIDE**',
+    brand: 'Oral-B',
+    category: 'Toothbrush',
+    price: 69.99,
+    countInStock: 10,
+    rating: 3.5,
+    numReviews: 13,
+  },
+  {
+    name: 'Finish Quantum Ultimate Pro Lemon Dishwash Tablets',
+    image: '/images/dishwash.png',
+    description:
+      'Finish Quantum Ultimate Pro dishwashing tablets clean dishes and boosts shine and includes our ACTIVBLU TECHNOLOGYTM!',
+    brand: 'Finish Quantum Ultimate',
+    category: 'dishwash',
+    price: 31.99,
+    countInStock: 7,
+    rating: 4.2,
+    numReviews: 8,
+  },
+  {
+    name: 'Ferrero Raffaello Heart T10',
+    image: '/images/ferrero.png',
+    description:
+      '10 Raffaello delicacies ideal for sharing with your loved ones to make any moment special.A precious heart of white almond enveloped in a delicious creamy filling, all enclosed in a crispy wafer shell scattered with fragrant coconut flakes.',
+    brand: 'Ferrero',
+    category: 'Chocolate',
+    price: 11.99,
+    countInStock: 7,
+    rating: 4.9,
+    numReviews: 8,
+  },
+  {
+    name: 'Blackmores Vitamin D3 1000iu Capsules',
+    image: '/images/vitamin.png',
+    description:
+      'Blackmores Vitamin D3 1000 IU can assist in building and maintaining healthy bones. Vitamin D3 helps the absorption of calcium and supports immune system health and healthy muscles.',
+    brand: 'Blackmores',
+    category: 'Vitamin',
+    price: 27.99,
+    countInStock: 8,
+    rating: 2.5,
+    numReviews: 5,
+  },
+  {
+    name: 'Kb Tender Squid Chips Lightly Crumbed',
+    image: '/images/frozen.png',
+    description:
+      'From KB foods, Tender pieces of wild caught squid, lightly coated in our classic crumb.',
+    brand: 'KB',
+    category: 'Frozen',
+    price: 24.99,
+    countInStock: 9,
+    rating: 4.5,
+    numReviews: 16,
+  },
+  {
+    name: 'Golden Circle Orange Fruit Drink Multipack 250mL',
+    image: '/images/juice.png',
+    description:
+      'Omo Ultimate Laundry Liquid Detergent Front & Top Loader 1.8LWith built in pre-treaters, OMO Ultimate liquid actively lifts 48hour dried in stains. Suitable for both front and top loaders and recommended by leading machine manufacturers.',
+    brand: 'Golden Circle',
+    category: 'Juice',
+    price: 5.99,
+    countInStock: 9,
+    rating: 4.5,
+    numReviews: 9,
+  },
+  {
+    name: 'Palmolive Milk And Honey Hand Wash',
+    image: '/images/handwash.png',
+    description:
+      'The rich and creamy formula is clinically proven to remove germs from skin while leaving hands feeling soft and smooth. A light and sweet honey scent with a smooth milky notes, it feels like the warm sun on a cold day.',
+    brand: 'Palmolive',
+    category: 'Hand Wash',
+    price: 8.99,
+    countInStock: 10,
+    rating: 3.5,
+    numReviews: 15,
+  },
+]
+
+export default products
